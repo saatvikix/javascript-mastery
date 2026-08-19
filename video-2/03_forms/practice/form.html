@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <form novalidate>
+
+        <input type="text" id="user_name" placeholder="Name">
+        <span class="errors" id="name_error">
+            Incorrect Name
+        </span>
+
+        <input type="email" id="email" placeholder="Email">
+        <span class="errors" id="email_error">
+            Incorrect Email
+        </span>
+
+        <input type="password" id="password" placeholder="Password">
+        <span class="errors" id="pwd_error">
+            Incorrect Password
+        </span>
+
+        <input type="submit" id="submit" value="Submit">
+
+        <span id="success"> Thank you for submitting your details</span>
+
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+        }
+        
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: left;
+            width:40%;
+            border:2px solid rgb(181, 179, 179);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea{
+            background-color: #121111;
+            padding: 5px;
+            border:2px solid rgb(116, 113, 113);
+            border-radius: 6px;
+            color: white;
+            width: 95%;
+            
+        }
+
+        select {
+            width: 30%;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            border:2px solid rgb(116, 113, 113);
+            border-radius: 6px;
+            background-color: rgb(38, 11, 84);
+            color:white;
+            display:block;
+            /* margin:auto; */
+
+        }
+        textarea{
+            height: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #submit{
+            width:30%;
+            height:50px;
+            background-color: rgb(224, 35, 130);
+            margin: auto;
+        }
+
+        #hide{
+            display:none;
+        }
+
+    </style>
+    <script src="./03_forms.js" defer></script>
+</head>
+<body>
+    
+    <form action="">
+         <!-- required minlength = 3 => inline validation -->
+        <input type="text" placeholder="name" id="name">
+        
+        <small id="hide">Your name should be greater than 2 characters</small>
+
+        <input type="email" placeholder="email">
+
+        <!-- <input type="password" placeholder="password" pattern="[a-z]{3,8}">  regex pattern validation -->
+        <input type="password" placeholder="password">
+        <select>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select>
+
+        <textarea placeholder="Tell us about you"></textarea>
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+
+</body>
+</html>
