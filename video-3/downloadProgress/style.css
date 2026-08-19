@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    font-family: "Ubuntu", sans-serif;
+
+    background: #0b0b0d;
+    color: #eeeeee;
+}
+
+
+/* ---------- Background ---------- */
+
+.background-circle {
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.12;
+}
+
+.circle-1 {
+    background: #ffffff;
+
+    top: 10%;
+    left: 20%;
+}
+
+.circle-2 {
+    background: #888888;
+
+    bottom: 5%;
+    right: 20%;
+}
+
+
+/* ---------- Glass Window ---------- */
+
+.download-window {
+    position: relative;
+
+    width: 500px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.55),
+        inset 0 1px 1px rgba(255, 255, 255, 0.06);
+}
+
+
+/* ---------- Text ---------- */
+
+.download-window h1 {
+    font-size: 28px;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+.status {
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Progress Bar ---------- */
+
+.progress-container {
+    width: 100%;
+    height: 16px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/*
+    THIS is the element you manipulate
+    using JavaScript.
+*/
+
+.progress-bar {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #d6d6d6;
+
+    transition: width 0.1s linear;
+}
+
+
+/* ---------- Percentage ---------- */
+
+.percentage {
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.55);
+}
+
+
+/* ---------- Start Button ---------- */
+
+.start-button {
+    margin-top: 25px;
+
+    padding: 11px 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.07);
+    color: #eeeeee;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.start-button:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    border-color: rgba(255, 255, 255, 0.22);
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.start-button:active {
+    transform: translateY(0);
+}
