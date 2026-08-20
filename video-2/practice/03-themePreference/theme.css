@@ -1,0 +1,36 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+body.dark{
+    background-color: #222;
+    color: white;
+}
+
+
+.container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    color:white;
+    background-color: rgb(27, 126, 162);
+    border:none;
+    border-radius: 6px;
+}
