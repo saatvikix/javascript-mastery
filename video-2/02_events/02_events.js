@@ -40,7 +40,7 @@ select.addEventListener("change", function(phone) {
 })
 
 
-//===================screen pe type karna=========
+//=================== screen pe type karna =========================
 window.addEventListener("keydown", (char)=>{
     if(char.key == " "){
         document.querySelector("h1").innerText = "Space";

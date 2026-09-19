@@ -20,7 +20,7 @@ let printHello = setTimeout(function(){
 clearTimeout(printHello);
 
 
-//======================
+//===========================================================
 
 let printHello2 = setInterval(function(){
     console.log("hello")
