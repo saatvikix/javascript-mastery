@@ -25,4 +25,4 @@ async function getSomething() {
     }
 }   
 
-while(true) getSomething();
+getSomething();
